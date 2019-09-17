@@ -4,16 +4,16 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Nicholas Bennett"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-09-17 01:33:05 PM"/>
+        <attribute name="saved" value="2019-09-17 02:05:38 PM"/>
         <attribute name="created" value="TmljaG9sYXMgQmVubmV0dDtOQi1JTlNQSVJPTi0xNTsyMDE5LTA5LTE3OzAxOjE4OjUyIFBNOzM4MjE="/>
-        <attribute name="edited" value="TmljaG9sYXMgQmVubmV0dDtOQi1JTlNQSVJPTi0xNTsyMDE5LTA5LTE3OzAxOjMzOjA1IFBNOzE7MzkyNA=="/>
+        <attribute name="edited" value="TmljaG9sYXMgQmVubmV0dDtOQi1JTlNQSVJPTi0xNTsyMDE5LTA5LTE3OzAyOjA1OjM4IFBNOzM7MzkzMg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="celsiusInput" type="Real" array="False" size=""/>
-            <input variable="celsiusInput"/>
-            <output expression="celsiusToFahrenheit(celsiusInput)" newline="True"/>
+            <declare name="fahrenheitInput" type="Real" array="False" size=""/>
+            <input variable="fahrenheitInput"/>
+            <output expression="fahrenheitToCelsius(fahrenheitInput)" newline="True"/>
         </body>
     </function>
     <function name="celsiusToFahrenheit" type="Real" variable="fahrenheit">
@@ -23,6 +23,15 @@
         <body>
             <declare name="fahrenheit" type="Real" array="False" size=""/>
             <assign variable="fahrenheit" expression="9 * celsius / 5 + 32"/>
+        </body>
+    </function>
+    <function name="fahrenheitToCelsius" type="Real" variable="celsius">
+        <parameters>
+            <parameter name="fahrenheit" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="celsius" type="Real" array="False" size=""/>
+            <assign variable="celsius" expression="(fahrenheit - 32) * 5 / 9"/>
         </body>
     </function>
 </flowgorithm>
