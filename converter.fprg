@@ -4,13 +4,14 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Nicholas Bennett"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-09-17 02:05:38 PM"/>
+        <attribute name="saved" value="2019-09-18 12:02:18 AM"/>
         <attribute name="created" value="TmljaG9sYXMgQmVubmV0dDtOQi1JTlNQSVJPTi0xNTsyMDE5LTA5LTE3OzAxOjE4OjUyIFBNOzM4MjE="/>
-        <attribute name="edited" value="TmljaG9sYXMgQmVubmV0dDtOQi1JTlNQSVJPTi0xNTsyMDE5LTA5LTE3OzAyOjA1OjM4IFBNOzM7MzkzMg=="/>
+        <attribute name="edited" value="TmljaG9sYXMgQmVubmV0dDtOQi1JTlNQSVJPTi0xNTsyMDE5LTA5LTE4OzEyOjAyOjE4IEFNOzQ7MzkxNQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
+            <while expression=""/>
             <declare name="fahrenheitInput" type="Real" array="False" size=""/>
             <input variable="fahrenheitInput"/>
             <output expression="fahrenheitToCelsius(fahrenheitInput)" newline="True"/>
